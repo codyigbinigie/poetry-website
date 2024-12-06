@@ -1,5 +1,15 @@
 {
-    "users": [],
-    "poems": []
-  }
-  
+  "users": [
+    { "id": 1, "username": "testuser", "password": "password123" }
+  ],
+  "poems": [
+    {
+      "id": 1,
+      "title": "Nature's Beauty",
+      "content": "The sky is blue, the grass is green.",
+      "authorId": 1,
+      "authorName": "testuser",
+      "comments": []
+    }
+  ]
+}

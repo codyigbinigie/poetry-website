@@ -19,7 +19,7 @@ interface CommentData {
     text: string;
 }
 
-class PoetryApp {
+class PoetryApplication {
     private session: UserSession | null = null;
     private poemListEl: HTMLElement;
     private searchInputEl: HTMLInputElement | null = null;
