@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <title>Poetry Haven - Expanded</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+</head>
+<body class="light-mode">
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">Poetry Haven</div>
+            <div class="nav-actions" id="navActions">
+                <!-- Dynamic based on login state -->
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="authSection">
+            <h2>Login or Register</h2>
+            <form id="loginForm">
+                <div>
+                    <label for="loginUsername">Username</label>
+                    <input type="text" id="loginUsername" required />
+                </div>
+                <div>
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" required />
+                </div>
+                <button type="submit">Login</button>
+            </form>
+            <hr />
+            <form id="registerForm">
+                <div>
+                    <label for="registerUsername">Username</label>
+                    <input type="text" id="registerUsername" required />
+                </div>
+                <div>
+                    <label for="registerPassword">Password</label>
+                    <input type="password" id="registerPassword" required />
+                </div>
+                <button type="submit">Register</button>
+            </form>
+        </section>
+
+        <section id="poemSection" style="display:none;">
+            <h2>Welcome, <span id="welcomeUser"></span></h2>
+            <input type="text" id="searchInput" placeholder="Search poems..." />
+            <button id="themeToggleBtn">🌗</button>
+
+            <h3>Add a New Poem</h3>
+            <form id="poemForm">
+                <div>
+                    <label for="poemTitle">Title</label>
+                    <input type="text" id="poemTitle" required />
+                </div>
+                <div>
+                    <label for="poemContent">Content</label>
+                    <textarea id="poemContent" rows="5" required></textarea>
+                </div>
+                <button type="submit">Add Poem</button>
+            </form>
+
+            <h3>Poems</h3>
+            <div id="poemList" class="poem-list"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Poetry Haven</p>
+    </footer>
+</body>
+</html>
