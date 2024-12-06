@@ -25,10 +25,13 @@ Thumbs.db
 .idea/
 *.swp
 
-# Git
-.git/
-
 # Miscellaneous
 *.log
 *.bak
 *.tmp
+
+# Compiled JavaScript files
+*.js
+
+# Database file
+backend/database.json
